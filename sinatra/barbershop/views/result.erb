@@ -1,0 +1,20 @@
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Username</th>
+			<th>Phone</th>
+			<th>Date & Time</th>
+			<th>Barber</th>
+			<th>Color</th>
+		</tr>
+	</thead>
+	<tbody>
+<% @hh.keys.each do |key| %>
+	<tr><% value=[] %><% value = @hh[key] %>
+		<% value.each do |x| %>
+			<td><%= x.to_s %></td>
+		<% end %>
+	</tr>
+<% end %>
+	</tbody>
+</table>
