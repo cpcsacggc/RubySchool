@@ -1,0 +1,71 @@
+<h2>Записаться</h2>
+<p>На этой странице вы сможете записаться к нам в Barber Shop</p>
+
+
+<script type="text/javascript">
+
+
+$(function() {
+
+  // тут я могу написать любой javascript код, который исполнится
+  // после загрузки страницы
+
+  $('#color').simplecolorpicker();
+  
+});
+
+
+</script>
+
+
+<form action="/visit" method="POST" role="form">
+
+  <div class="form-group">
+    <label>Ваше имя</label>
+    <input name="username" type="text" class="form-control" placeholder="Ваше имя" value="<%= @username %>">
+  </div>
+
+  <div class="form-group">
+    <label>Ваш телефон</label>
+    <input name="phone" type="text" class="form-control" placeholder="Ваш телефон" value="<%= @phone %>">
+  </div>
+
+  <div class="form-group">
+    <label>Когда вас ждать?</label>
+    <input name="datetime" type="text" class="form-control" placeholder="Введите дату и время" value="<%= @datetime %>">
+  </div>
+
+
+  <div class="form-group">
+    <label>Ваш парикмахер:</label>
+    <select id="barber" name="barber" class="form-control">
+      <option>Jessie Pinkman</option>
+      <option>Walter White</option>
+      <option>Gus Fring</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label>В какие цвета хотите себя окрасить: </label>
+
+    <select id="color" name="color">
+      <option value="#000000">Black</option>
+      <option value="#8b4513">SaddleBrown</option>
+      <option value="#ffa500">Orange</option>
+      <option value="#008000">Green</option>
+      <option value="#00008B">Dark blue</option>
+      <option value="#0000ff">Blue</option>
+      <option value="#40e0d0">Turquoise</option>
+      <option value="#90ee90">Light green</option>
+      <option value="#006400">Dark green</option>
+      <option value="#ffff00">Yellow</option>
+      <option value="#ff0000">Red</option>
+      <option value="#8b0000">Dark red</option>
+      <option value="#800080">Purple</option>
+      <option value="#e1e1e1">Gray</option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Записаться</button>
+
+</form>
