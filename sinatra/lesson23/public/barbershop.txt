@@ -1,0 +1,7 @@
+User: , phone: , date and time: , Barber: , Color: #000000
+User: sergey, phone: 916-877-1889, date and time: , Barber: Walter White, Color: #8b4513
+User: sergey, phone: 916-877-1889, date and time: , Barber: Walter White, Color: #8b4513
+User: serge, phone: 11111, date and time: , Barber: Jessie Pinkman, Color: #ffa500
+User: serge, phone: 11111, date and time: , Barber: Jessie Pinkman, Color: #ffa500
+User: students@testsrv1.com, phone: 19168771889, date and time: , Barber: Jessie Pinkman, Color: #ffa500
+User: seriy@seriy.org, phone: ser, date and time: , Barber: Jessie Pinkman, Color: #8b4513
