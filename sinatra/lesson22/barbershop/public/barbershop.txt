@@ -1,0 +1,2 @@
+User: Sergey, phone: 916-204-9537, date and time: 5pm, Barber: .
+User: Sergey Z, phone: 916-877-1889, date and time: 8pm, Barber: Walter White.
