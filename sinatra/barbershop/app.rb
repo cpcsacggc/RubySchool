@@ -19,6 +19,7 @@ get '/contacts' do
 end
 
 get '/result' do
+=begin	
 	@arr1 = []
 	@hh = {}
 	@file = File.open("./public/barbershop.txt", "r")
@@ -31,6 +32,7 @@ get '/result' do
 	end
 	erb :result
 end
+=end
 
 post '/visit' do
 
@@ -54,10 +56,10 @@ post '/visit' do
 
 	#erb "OK, username is #{@username}, #{@phone}, #{@datetime}, #{@barber}, #{@color}"
 	#save data to file name
-		f = File.open './public/barbershop.txt', 'a'
+		# f = File.open './public/barbershop.txt', 'a'
 
-	f.write "#{@username}, #{@phone}, #{@datetime}, #{@barber}, #{@color}\n"
-	f.close
+	# f.write "#{@username}, #{@phone}, #{@datetime}, #{@barber}, #{@color}\n"
+	# f.close
 
 
 	@title = "Ok"
