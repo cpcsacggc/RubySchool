@@ -30,9 +30,10 @@ get '/result' do
 		@hh[@file.lineno] = @arr1
 		#@hh.delete_if{|key, value| key == 1}
 	end
+=end
 	erb :result
 end
-=end
+
 
 post '/visit' do
 
