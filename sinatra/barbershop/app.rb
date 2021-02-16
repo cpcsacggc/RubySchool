@@ -36,6 +36,10 @@ get '/result' do
 	erb :result
 end
 
+get '/showusers' do
+  erb  "Hello World"
+
+end
 
 post '/visit' do
 
