@@ -32,18 +32,6 @@ get '/contacts' do
 end
 
 get '/result' do
-=begin	
-	@arr1 = []
-	@hh = {}
-	@file = File.open("./public/barbershop.txt", "r")
-	@file.each_line do |line|
-		@ar2=[]
-		@arr2 = line.strip
-		@arr1 = @arr2.split(', ')
-		@hh[@file.lineno] = @arr1
-		#@hh.delete_if{|key, value| key == 1}
-	end
-=end
 	erb :result
 end
 
@@ -67,14 +55,6 @@ post '/visit' do
 	if @error != ''
 		return erb :visit
 	end
-
-	#erb "OK, username is #{@username}, #{@phone}, #{@datetime}, #{@barber}, #{@color}"
-	#save data to file name
-		# f = File.open './public/barbershop.txt', 'a'
-
-	# f.write "#{@username}, #{@phone}, #{@datetime}, #{@barber}, #{@color}\n"
-	# f.close
-
 
 	@title = "Ok"
 	@message = "Username: #{@username}, Phone: #{@phone}, Date and Time: #{@datetime}, Barber: #{@barber}, Color: #{@color}"
