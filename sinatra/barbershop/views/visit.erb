@@ -39,9 +39,8 @@ $(function() {
     <label>Ваш парикмахер:</label>
     <select id="barber" name="barber" class="form-control">
       <option></option>
-      <option <%= @barber == 'Jessie Pinkman' ? 'selected' : '' %>>Jessie Pinkman</option>
-      <option <%= @barber == 'Walter White' ? 'selected' : '' %>>Walter White</option>
-      <option <%= @barber == 'Gus Fring' ? 'selected' : '' %>>Gus Fring</option>
+      <% @barbers.each do |row| %><option <%= @barber == row['name'] ? 'selected' : '' %>><%= row['name'] %></option>
+      <% end %>
     </select>
   </div>
 

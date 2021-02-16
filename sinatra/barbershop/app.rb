@@ -14,7 +14,9 @@ def seed_db barbers
 		end	
 	end
 end
-
+before do
+		@barbers = $db.execute 'select * from Barbers'
+end
 configure do
 	$db = SQLite3::Database.new 'barbershop.db'
 	$db.results_as_hash = true
