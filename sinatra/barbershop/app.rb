@@ -9,6 +9,7 @@ configure do
 	(
 		"id" INTEGER PRIMARY KEY AUTOINCREMENT, 
 		"username" TEXT, 
+		"phone", TEXT,
 		"datestamp" TEXT, 
 		"barber" TEXT, 
 		"color" TEXT
@@ -69,7 +70,6 @@ post '/visit' do
 	?, ?, ?, ?, ?
 	)', [@username, @phone, @datetime, @barber, @color]
 
-	}
 	@title = "Ok"
 	@message = "Username: #{@username}, Phone: #{@phone}, Date and Time: #{@datetime}, Barber: #{@barber}, Color: #{@color}"
 	erb :message
