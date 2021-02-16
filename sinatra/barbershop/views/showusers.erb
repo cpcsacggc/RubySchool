@@ -3,20 +3,18 @@
 		<tr>
 			<th>Имя</th>
 			<th>Телефон</th>
-			<th>Дата Когда ждать</th>
+			<th>Когда ждать</th>
 			<th>Парикмхер</th>
 			<th>Цвет Волос</th>
 		</tr>
 	</thead>
-	<% @results.each do |row| %>
 	<tbody>
-	 	<tr>
+	 	<tr><% @results.each do |row| %>
 			<td><%= row['username'] %></td>
 			<td><%= row['phone'] %></td>
 			<td><%= row['datestamp'] %></td>
 			<td><%= row['barber'] %></td>
 			<td><%= row['color'] %></td>
-		</tr>
+		</tr><% end %>
 	</tbody>
-	<% end %>
 </table>	
