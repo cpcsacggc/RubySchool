@@ -49,6 +49,8 @@ post '/visit' do
 	hh = { 	:username => 'Введите имя',
 			:phone => 'Введите телефон',
 			:datetime => 'Введите дату и время',
+			:barber => 'Выберите Парекмахера',
+			:color => 'Выберите цвет покраски волос'
 		}
 
 	@error = hh.select {|key,_| params[key] == ""}.values.join(", ")
