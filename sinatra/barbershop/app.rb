@@ -56,6 +56,20 @@ post '/visit' do
 		return erb :visit
 	end
 
+	$db.execute 'insert into Users 
+	(
+		username, 
+		phone, 
+		datestamp,
+		barber, 
+		color
+	)
+	values
+	(
+	?, ?, ?, ?, ?
+	)', [@username, @phone, @datetime, @barber, @color]
+
+	}
 	@title = "Ok"
 	@message = "Username: #{@username}, Phone: #{@phone}, Date and Time: #{@datetime}, Barber: #{@barber}, Color: #{@color}"
 	erb :message
