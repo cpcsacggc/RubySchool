@@ -1,9 +1,10 @@
 <h2>Add New Post</h2>
 <p>
-	<form>
-  <div action="/new" method="Post" class="form-group">
-  	<textarea class="form-control" rows="6" placeholder="Type post text here"></textarea>
-  	<br/>
+	<form action="/new" method="POST">
+  <div class="form-group">
+  	<textarea name="content" class="form-control" rows="6" placeholder="Type post text here"></textarea>
+  </div>
   	<button type="submit" class="btn btn-primary">Submit</button>
+  </div>
 </form>
 </p>
